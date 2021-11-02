@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Profile</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/styleBlog.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+</head>
+
+<body style="background: #f0f0f0f0;">
+	<!-- NAV -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow" id = "navbarid">
+        	<div class="container-fluid">
+        		<a class="navbar-brand" href="#">
+	      			<img src="img/logo.jpg" alt="" width="60" height="60"> 
+	  		 		<p class = "navbartitle">JobTasker</p>
+	  		 		<a class = "navbarlink" id = "navblog" href = "blog.html">Blog</a>
+	  		 		<a class = "navbarlink" id = "navprofile" href = "Profile.html">Profile</a>
+		    	</a>  
+	    	</div>
+		</nav>
+
+	<div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 col-12 profile-main">
+                <div class="row">
+                    <div class="col-md-12 col-12 user-detail-main border mb-3 pb-2 shadow">
+                        <div class="row">
+                            <div class="col-md-12 col-12 profile-back">
+                                <img src="img/logo.jpg" class="rounded-circle">
+                            </div>
+                        </div>
+                        <div class="row">
+                        	<div class="col-md-2 user-detail">
+                                <h4 class="m-0"><strong>Balance</strong></h4>
+                                <p class="m-0">Rp.555.555</p>
+                            </div>
+                            <div class="col-md-8  user-detail text-center">
+                                <h4 class="m-0"><strong>David Blame</strong></h4>
+                                <p class="m-0">david.blame123</p>
+                            </div>
+                            <div class="col-md-2 user-detail">
+                            	<a type="button" class="btn btn-primary" href="login.html">Logout</a>
+                                <!-- <button type="submit" class="btn btn-primary btn-lg">Logout</button> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of header profile -->
+                    <div class="col-md-12 col-12 user-detail-main border mb-3 pb-2 shadow">
+                        <div class="row">
+                            <div class="col-md-12 col-12 body-profile-page">
+                                <h5 class="m-5 text-center"><strong>Feedback</strong></h5>
+                                <form>
+								  	<div class="form-group">
+								    	<label for="exampleInputCatagory">Category</label>
+								    	<input type="text" class="form-control" id="type" aria-describedby="catagoryHelp" placeholder="issues catagory">
+								    	<small id="typeHelp" class="form-text text-muted">Input your issues catagory e.g Bug, Error, Suggest.</small>
+								  	</div>
+								  	<div class="form-group">
+								    	<label for="exampleInputMessage">Message</label>
+								    	<input type="text" class="form-control" id="exampleInputMessage" placeholder="message">
+								  	</div>
+								  	<div class="form-group form-check">
+								    	<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								    	<label class="form-check-label" for="exampleCheck1">Send you log via Email</label>
+							  		</div>
+								  	<button type="submit" class="btn btn-primary">Submit</button>
+								</form>
+                            </div>
+                            <div class="col-md-12 col-12 body-profile-page">
+                            	<table class="table table-bordered table-striped">
+								  	<thead class="thead-dark">
+								    	<tr>
+									    	<th scope="col">No</th>
+									    	<th scope="col">Type</th>
+									    	<th scope="col">Message</th>
+									    	<th scope="col">Created Date</th>
+								    	</tr>
+								 	</thead>
+								  	<tbody>
+									    <tr>
+									    	<th scope="row">1</th>
+									    	<td>Bug</td>
+									    	<td>Ada bug pada halaman profil, username tidak muncul</td>
+									    	<td>12/12/2012</td>
+									    </tr>
+									    <tr>
+									        <th scope="row">2</th>
+										    <td>Error</td>
+										    <td>Ada error pada saat melakukan login, muncul pesan error, tetapi tidak terjadi sesuatu yang janggal</td>
+										    <td>12/12/2012</td>
+									    </tr>
+									    <tr>
+										    <th scope="row">3</th>
+										    <td>Suggest</td>
+										    <td>Kalau bisa ditambahkan fitur dark mode pada websitenya</td>
+										    <td>12/12/2012</td>
+									    </tr>
+								    </tbody>
+								</table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
