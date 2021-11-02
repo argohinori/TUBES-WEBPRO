@@ -1,0 +1,80 @@
+.navbartitle{
+  margin-top: -45px; 
+  margin-left: 70px; 
+  font-size: 25px; 
+  font-weight: bold;}
+
+.navbarlink{
+  font-size: 20px; 
+  font-weight: bold;
+  color: black;}
+
+#navblog{
+  margin-right: -700px;}
+
+#navprofile{
+  margin-right: 50px;}
+
+#imgheader{
+  margin-top: -50px;
+  width: 110%;
+  margin-left: -50px;
+  margin-right: -50px;
+  margin-bottom: 50px;}
+
+.headertitle{
+  margin-top: -350px; 
+  text-align: center; 
+  font-size: 20px; 
+  color: white; 
+  font-weight: bold;}
+
+#headertext{
+  margin-top: -250px; 
+  margin-left: 270px; 
+  font-size: 40px; 
+  color: white; 
+  font-weight: bold;}
+
+#cardstyle{
+  margin-top: 250px;
+  margin-bottom: -100px; 
+  padding-top: 40px; 
+  padding-left: 32px; 
+  border-color: white;}
+
+.cardtitle{
+  font-weight: bold; 
+  font-size: 25px; 
+  margin-left: 25px; 
+  margin-top: 12px;
+  color:  black;}
+
+.cardcaption{
+  font-size: 20px; 
+  margin-left: 10px; 
+  margin-top: 12px;
+  color:  black;}
+
+#imgfooter{
+  margin-top: 240px;
+  width: 110%;
+  margin-left: -50px;
+  margin-right: -50px;}
+
+.footercaption{
+  margin-top:  -250px; 
+  margin-left: 200px;
+  font-size: 40px; 
+  color: white; 
+  font-weight: bold;}
+
+.inputtext{
+  width: 500px; 
+  margin-left: 300px; 
+  margin-top: 30px; 
+  height: 40px;}
+
+.buttontext{
+  margin-left: 20px; 
+  border-radius: 20px;}
