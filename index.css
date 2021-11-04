@@ -1,9 +1,17 @@
+html {
+    zoom: 0.7; /* Old IE only */
+    -moz-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    margin-top: -80px;
+}
 .websiteBody{
   margin: 0;
+  min-width: 100%;
 }.Page{
   display:block;
   margin:auto;
-  width:100%;
+  width: 100%;
   height:auto;
   pointer-events:auto;
 }
@@ -123,7 +131,7 @@
 .JobTasker{
   position:relative;
   z-index:16;
-  pointer-events:none;
+  pointer-events:auto;
   margin-left:150px;
   width:429.33px;
   min-width:429.33px;
@@ -150,7 +158,7 @@
 .Blog{
   position:relative;
   z-index:18;
-  pointer-events:none;
+  pointer-events:auto;
   margin-left:1431px;
   width:124px;
   min-width:124px;
@@ -177,7 +185,7 @@
 .Profile{
   position:relative;
   z-index:17;
-  pointer-events:none;
+  pointer-events:auto;
   margin-left:1644px;
   width:188px;
   min-width:188px;
@@ -219,6 +227,7 @@
   z-index:8;
   position:relative;
   display:flex;
+
 }
 .Group-53{
   position:relative;
