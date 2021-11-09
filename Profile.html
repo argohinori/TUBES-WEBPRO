@@ -5,9 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Profile</title>
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap4.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/styleBlog.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap4.min.js"></script>
 </head>
 
 <body style="background: #f0f0f0f0;">
@@ -54,53 +59,53 @@
                             <div class="col-md-12 col-12 body-profile-page">
                                 <h5 class="m-5 text-center"><strong>Feedback</strong></h5>
                                 <form>
-								  	<div class="form-group">
-								    	<label for="exampleInputCatagory">Category</label>
-								    	<input type="text" class="form-control" id="type" aria-describedby="catagoryHelp" placeholder="issues catagory">
-								    	<small id="typeHelp" class="form-text text-muted">Input your issues catagory e.g Bug, Error, Suggest.</small>
-								  	</div>
-								  	<div class="form-group">
-								    	<label for="exampleInputMessage">Message</label>
-								    	<input type="text" class="form-control" id="exampleInputMessage" placeholder="message">
-								  	</div>
-								  	<div class="form-group form-check">
-								    	<input type="checkbox" class="form-check-input" id="exampleCheck1">
-								    	<label class="form-check-label" for="exampleCheck1">Send you log via Email</label>
-							  		</div>
-								  	<button type="submit" class="btn btn-primary">Submit</button>
-								</form>
+					<div class="form-group">
+						<label for="exampleInputCatagory">Category</label>
+						<input type="text" class="form-control" id="type" aria-describedby="catagoryHelp" placeholder="issues catagory">
+						<small id="typeHelp" class="form-text text-muted">Input your issues catagory e.g Bug, Error, Suggest.</small>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputMessage">Message</label>
+						<input type="text" class="form-control" id="exampleInputMessage" placeholder="message">
+					</div>
+					<div class="form-group form-check">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1">
+						<label class="form-check-label" for="exampleCheck1">Send you log via Email</label>
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
                             </div>
                             <div class="col-md-12 col-12 body-profile-page">
-                            	<table class="table table-bordered table-striped">
-								  	<thead class="thead-dark">
-								    	<tr>
-									    	<th scope="col">No</th>
-									    	<th scope="col">Type</th>
-									    	<th scope="col">Message</th>
-									    	<th scope="col">Created Date</th>
-								    	</tr>
-								 	</thead>
-								  	<tbody>
-									    <tr>
-									    	<th scope="row">1</th>
-									    	<td>Bug</td>
-									    	<td>Ada bug pada halaman profil, username tidak muncul</td>
-									    	<td>12/12/2012</td>
-									    </tr>
-									    <tr>
-									        <th scope="row">2</th>
-										    <td>Error</td>
-										    <td>Ada error pada saat melakukan login, muncul pesan error, tetapi tidak terjadi sesuatu yang janggal</td>
-										    <td>12/12/2012</td>
-									    </tr>
-									    <tr>
-										    <th scope="row">3</th>
-										    <td>Suggest</td>
-										    <td>Kalau bisa ditambahkan fitur dark mode pada websitenya</td>
-										    <td>12/12/2012</td>
-									    </tr>
-								    </tbody>
-								</table>
+                            	<table class="table table-bordered table-striped" id="tabfeedback">
+					<thead class="thead-dark">
+						<tr>
+							<th scope="col">No</th>
+							<th scope="col">Type</th>
+							<th scope="col">Message</th>
+							<th scope="col">Created Date</th>
+						</tr>
+					</thead>
+					<tbody>
+					    	<tr>
+							<th scope="row">1</th>
+							<td>Bug</td>
+							<td>Ada bug pada halaman profil, username tidak muncul</td>
+							<td>12/12/2012</td>
+					    	</tr>
+					    	<tr>
+							<th scope="row">2</th>
+						    	<td>Error</td>
+						    	<td>Ada error pada saat melakukan login, muncul pesan error, tetapi tidak terjadi sesuatu yang janggal</td>
+						    	<td>12/12/2012</td>
+					    	</tr>
+					    	<tr>
+						    	<th scope="row">3</th>
+						    	<td>Suggest</td>
+						    	<td>Kalau bisa ditambahkan fitur dark mode pada websitenya</td>
+						    	<td>12/12/2012</td>
+					    	</tr>
+				    	</tbody>
+				</table>
                             </div>
                         </div>
                     </div>
@@ -108,5 +113,10 @@
             </div>
         </div>
     </div>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+    		$('#tabfeedback').DataTable();
+		} );
+    	</script>
 </body>
 </html>
